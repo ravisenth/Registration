@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p id="new"></p>
+<script>
+function display(){
+const stored = JSON.parse(localStorage.getItem('store'));
+let name=stored.map((val)=>val.name);
+document.getElementById('new').innerHTML=name;
+}display();
+</script>
+</body>
+</html>

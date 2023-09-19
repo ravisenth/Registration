@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body class="bg">
+<div class="align">
+<h2>Login</h2>
+<form id="form1">
+<label>Username:</label><input type="text" id="t1" required><br><br>
+<label>Password:</label><input type="password" id="t2" required><br><br>
+<input type="submit" id="but" value="Submit">
+<a href="reg.html"><font color="yellow">New User...click here</a></font>
+</form>
+</div>
+<script>
+
+document.getElementById("but").addEventListener("click", get);
+
+function get(){
+const stored = JSON.parse(localStorage.getItem('store'));
+console.log(stored);
+let name=stored.map((val)=>val.name);
+console.log(name);
+let pass=stored.map((val)=>val.pass);
+let usname=document.getElementById('t1').value;
+let passw=document.getElementById('t2').value;
+if(usname==name && passw==pass){
+window.location.href='display.html';
+}
+}
+
+</script>
+</body>
+
+</html>

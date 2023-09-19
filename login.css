@@ -1,0 +1,41 @@
+/* Mobile */
+@media only screen and (max-width: 320px) {
+form{
+	width:100%;
+}
+.align{
+	width:100%;
+}
+}
+.bg{
+    background-image:url('bg.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    color:white;
+	}
+.align{
+    text-align:center;
+    margin-top:100px;
+	}
+input{
+      background:transparent;
+      color:white;
+	  width: 15%;
+	  padding: 10px;
+	  border: 1px solid white;
+	  border-radius: 4px;
+	  }
+::placeholder {
+      color: white;
+	  }
+button{
+      color:white;
+      background-color:transparent;
+	  }
+label{
+      display:inline-block;
+      width:80px;
+	  text-align:left;
+	  font-size:17px;
+	  }
